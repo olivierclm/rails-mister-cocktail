@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>List of cocktails</h1>
+      <h2> </h2>
+      <%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+      <br>
+      <br>
+      <div class="row">
+        <% @cocktails.each do |cocktail| %>
+          <!-- <li class="list-group-item">
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          </li> -->
+        <!-- <div class="row"> -->
+          <div class="col-4">
+            <div class="card">
+            <div class="flat-card">
+              <div class="flat-card-image" style="background-color: grey"></div>
+              <div class="flat-card-content" style="background-color: rgba(245, 245, 245, 0.4);">
+                <div class="flat-card-title">
+                  <h4><%= link_to cocktail.name, cocktail_path(cocktail)%></h4>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        <% end %>
+        <!-- </div> -->
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+

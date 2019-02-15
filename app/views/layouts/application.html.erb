@@ -9,9 +9,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+<!--       <%= image_tag "logo.png", height: 50 %>
+ -->      <%= link_to 'Cocktail', cocktails_path, class: 'navbar-brand' %>
+      <!-- <img src="app/assets/images/logo.png" width="30" height="30" alt=""> -->
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ml-auto flex">
+        </div>
+      </div> -->
+    </nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
