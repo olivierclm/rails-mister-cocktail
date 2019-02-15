@@ -4,6 +4,8 @@
       <h1><%= @cocktail.name %></h1>
 
       <br>
+      <div><%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %></div>
+      <br>
       <div><%= link_to "Add new ingredient", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %></div>
       <br>
       <div class="list-group">
