@@ -98,6 +98,11 @@ li {
 //   align-items: center;
 //   justify-content: space-between;
 // }
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
 .flat-card {
   width: 100%;
   position: relative;
